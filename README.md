@@ -2,8 +2,16 @@
 This project creates a very simple Flask application written in Python that exposes a REST API for a very basic
 accumulator. The values are stored in memory and have no other state.
 
+*THIS REPOSITORY IS FOR DEMONSTRATION PURPOSES ONLY.* It is not intended to be production code.
+
 ## Prerequisites
-You must have Python and the `pipenv` package installed.
+Since this is intended to be a training container the only thing you should need to use the container is Docker or
+Kubernetes.
+
+This repo is not intended to describe how to setup or manage these tools, only to provide a container for use with them.
+
+### Development
+If you want to develop or run the application locally you must have Python and the `pipenv` package installed.
 
 ```shell
 $ python3 -m pip install pipenv --user
