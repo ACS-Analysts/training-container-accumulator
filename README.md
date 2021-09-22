@@ -57,7 +57,7 @@ $ curl -q -X GET http://localhost:8000/data
 This endpoint increments the specified accumulator by one. The call returns all current accumulator values as a JSON
 document. For example, to increment the `bar` accumulator:
 ```shell
-$ curl -q -X GET http://localhost:8000/increment/foo
+$ curl -q -X GET http://localhost:8000/increment/bar
 ```
 
 ## Docker
