@@ -70,5 +70,5 @@ $ docker build -t accumulator:1.0.0 .
 
 ### Running the image locally
 ```shell
-$ docker run -d -P 8000:8000 --name accumulator accumulator:1.0.0
+$ docker run -d -p 8000:8000 --name accumulator accumulator:1.0.0
 ```
