@@ -1,10 +1,10 @@
-FROM python:3.9.7-alpine3.14
+FROM python:3.10.7-alpine3.16
 COPY . /app
 WORKDIR /app
-RUN apk add g++ make libffi-dev openssl-dev python3-dev && \
+RUN apk add g++ make libffi-dev openssl-dev && \
     pip3 install pipenv && \
     cd /app && \
-    pipenv install && \
+    pipenv sync --system && \
     apk del g++ make && \
     rm -rf /var/cache/apk/*
 ENTRYPOINT ["./gunicorn-start.sh"]
